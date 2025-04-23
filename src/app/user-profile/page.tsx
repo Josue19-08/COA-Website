@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Guns from "@/components/guns";
-import Header from "@/components/layaout/header";
+import Guns from "@/components/misc/guns";
+
 
 const HomePage = () => {
 
@@ -30,7 +30,6 @@ const HomePage = () => {
 
   return (
     <>
-    <Header/>
       <div className="relative ">
         {/* Background Image */}
         <Image

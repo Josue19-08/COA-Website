@@ -5,9 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ChevronRight } from "lucide-react"
-
-import Navbar from "@/components/navbar/navbar"
-import NavMenu from "@/components/layaout/nav-menu"
 import { Button } from "@/components/button"
 
 import DigitalRainEffect from "@/components/effects/digital-rain-effect"
@@ -21,15 +18,6 @@ import FactionsOverview from "@/components/factions/factions-overview"
 
 export default function FactionsPage() {
   const [activeTab, setActiveTab] = useState("neon")
-
-  const navItems = [
-    { label: "CITIZEN of ARCANIS", href: "/" },
-    { label: "FACTIONS", href: "/factions" },
-    { label: "COMMUNITY", href: "/about" },
-    { label: "HELP", href: "/features" },
-    { label: "MY ITEMS", href: "/contact" },
-    { label: "ACCOUNT", href: "/account" },
-  ]
 
   const cursorRef = useRef({ x: 0, y: 0 })
 
@@ -113,7 +101,6 @@ export default function FactionsPage() {
           />
         </Link>
         <nav className="hidden lg:flex items-center justify-center w-full">
-          <NavMenu items={navItems} />
         </nav>
         <Image
           src="/icons/myProfile.png"
